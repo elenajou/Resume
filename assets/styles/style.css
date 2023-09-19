@@ -13,14 +13,16 @@ body {
   background-size: clamp(1000px, 100%, 1500px) auto;
 }
 
-a {
-  color: #B2D0D0;
-  text-decoration: none;
+aside {
+  margin-top: 2px;
+  padding-left: 15px;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+  font-size: 0.8em;
+  font-style: italic;
 }
 
-a:hover {
-  color: #30d4da;
-  text-decoration: none;
+aside > p {
+  margin: 0.5rem;
 }
 
 h1,
@@ -55,6 +57,16 @@ h3 {
   padding: 0 15px;
   background: #094f56;
   overflow-y: auto;
+}
+
+.header a {
+  color: #B2D0D0;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: #30d4da;
+  text-decoration: none;
 }
 
 #header .profile img {
@@ -106,10 +118,6 @@ h3 {
   /* vertical-align: middle; */
 }
 
-#navbar i {
-  color: #30d4da;
-}
-
 .container,
 .container-fluid {
   padding-left: 30px;
@@ -119,6 +127,7 @@ h3 {
 @media (max-width: 1000px) {
   #header {
     width: 25%;
+    padding: 0.25em;
   }
 
   #header .profile h1,
@@ -135,8 +144,8 @@ h3 {
 
   .container,
   .container-fluid {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -144,6 +153,10 @@ h3 {
   Navigation Menu
 ----------------------*/
 /*----- Desktop -----*/
+#navbar i {
+  color: #30d4da;
+}
+
 .nav-menu {
   padding: 30px 0 0 0;
 }
@@ -289,14 +302,14 @@ h3 {
 }
 /*---- Summary ----*/
 
-#summary #personal_info dl {
+.summary #personal_info dl {
   width: 100%;
   overflow: hidden;
   background: transparent;
   padding: 0;
   margin: 0
 }
-#summary #personal_info dt {
+.summary #personal_info dt {
   float: left;
   width: 25%;
   min-height: 30px;
@@ -304,7 +317,7 @@ h3 {
   padding: 0;
   margin: 0;
 }
-#summary #personal_info dd {
+.summary #personal_info dd {
   float: left;
   width: 75%;
   min-height: 30px;
@@ -409,12 +422,69 @@ h3 {
   border: 2px solid #2f415a;
 }
 
+/*------------------
+  Credentials
+------------------*/
 
+/*------------------
+  Hobbies
+------------------*/
+.hobbies {
+  margin: 0;
+  padding: 0 0.3rem 2rem 0;
+  background-color: transparent;
+}
+
+.hobbies > h2,
+.hobby {
+  margin: 0.5rem;
+  padding: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.hobby {
+  background: transparent;
+}
+
+.hobby > h3,
+.hobbies > p {
+  margin: 0.2rem;
+  font-size: 1rem;
+}
+
+/*------------------
+  Contact Me
+------------------*/
+.contactme .container {
+  width: 90%;
+  background: #cad2ce;
+  padding: 25px;
+  margin: 25px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 25px 0 rgba(74, 72, 72, 0.7)
+}
+
+.contactme .form-item {
+  padding-bottom: 8px;
+}
+
+.contactme .container input,
+.contactme .container textarea {
+background: #f8f7f0;
+border-width: 0.1px;
+width: 100%;
+padding: 0;
+}
+
+.contactme button {
+  border-radius: 0%;
+  color: 
+}
 
 /*------------------
   Footer
 ------------------*/
 footer {
   padding: 150px;
-  /* margin: 100px; */
+  margin: 100px;
 }
