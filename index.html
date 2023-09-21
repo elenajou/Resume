@@ -34,13 +34,11 @@
         <img src="assets/images/profile.jpg" alt="" class="img-fluid rounded-circle">
         <h1><a href="index.html">Elena Jou</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="#" class="github"><i class="bi bi-github icon"></i></a>
-          <a href="#" class="linkedin"><i class="bi bi-linkedin icon"></i></i>
-            </i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram icon"></i></i>
-            </i></a>
-          <a href="#" class="discord"><i class="bi bi-discord icon"></i></i>
-            </i></a>
+          <a href="https://github.com/elenajou/" class="github"><i class="bi bi-github icon"></i></a>
+          <!-- <a href="#" class="linkedin"><i class="bi bi-linkedin icon"></i></a> -->
+          <a href="https://www.instagram.com/uojanele/" class="instagram"><i class="bi bi-instagram icon"></i></a>
+          <!-- <a href="#" class="discord"><i class="bi bi-discord icon"></i></a> -->
+          <a id="email-icon" href="#personal-info" class="nav-link scrollto"><i class="bi bi-envelope"></i></a>
         </div>
       </div>
 
@@ -58,7 +56,7 @@
           <li><a href="#hobbies" class="nav-link scrollto"><i class="bi bi-controller"></i>
               <span>Hobbies</span></a>
           </li>
-          <li><a href="#contactme" class="nav-link scrollto"><i class="bi bi-envelope"></i><span>Contact</span></a></li>
+          <!-- <li><a href="#contactme" class="nav-link scrollto"><i class="bi bi-envelope"></i><span>Contact</span></a></li> -->
         </ul>
       </nav>
     </div>
@@ -80,18 +78,18 @@
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right" data-aos-duration="1500">
-            <img src="assets/images/nina.jpg" alt="" class="img-fluid">
+            <img src="assets/images/puppy.jpeg" alt="" class="img-fluid">
           </div>
 
-          <div id="personal_info" class="col-lg-8 pt-4 pt-lg-0" data-aos="fade-left" data-aos-duration="1500">
+          <div id="personal-info" class="col-lg-8 pt-4 pt-lg-0" data-aos="fade-left" data-aos-duration="1500">
 
             <h2>Personal Information</h2>
-            <div class="container">
+            <div class="container personal-info-item">
               <dl>
                 <dt><b>Name: </b></dt>
                 <dd><span>Elena Jou</span></dd>
                 <dt><b>Email: </b></dt>
-                <dd><span>elenajou.ej@gmail.com</span></dd>
+                <dd><span id="email">elenajou.ej@gmail.com</span></dd>
                 <dt><b>Current Status: </b></dt>
                 <dd><span>Student at <a href="https://www.bcit.ca/">
                       <abbr title="British Columbia Intitute of Technology">BCIT</abbr>
@@ -198,33 +196,31 @@
         <!-- 3D Software -->
         <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
           <h3>3D Software</h3>
-          <div class="container">
+          <div class="container row">
             <!-- row 1 -->
-            <div class="row">
-              <div class="col-sm-4">
-                <span class="skill">SolidWorks <i class="val">Proficiency</i></span>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
-                    aria-valuemax="100">25%</div>
-                </div>
+            <div class="col-sm-4">
+              <span class="skill">SolidWorks <i class="val">Proficiency</i></span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+                  aria-valuemax="100">25%</div>
               </div>
+            </div>
 
-              <!-- col 2 -->
-              <div class="col-sm-4">
-                <span class="skill">AutoCAD <i class="val">Proficiency</i></span>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
-                    aria-valuemax="100">25%</div>
-                </div>
+            <!-- col 2 -->
+            <div class="col-sm-4">
+              <span class="skill">AutoCAD <i class="val">Proficiency</i></span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+                  aria-valuemax="100">25%</div>
               </div>
+            </div>
 
-              <!-- col 3 -->
-              <div class="col-sm-4">
-                <span class="skill">PTC Creo Parametric <i class="val">Proficiency</i></span>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
-                    aria-valuemax="100">25%</div>
-                </div>
+            <!-- col 3 -->
+            <div class="col-sm-4">
+              <span class="skill">PTC Creo Parametric <i class="val">Proficiency</i></span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+                  aria-valuemax="100">25%</div>
               </div>
             </div>
           </div>
@@ -286,107 +282,114 @@
     </section>
 
     <!-- Work Experience -->
-    <section id="work_experience" class="work_experience" data-aos="fade-up" data-aos-duration="1500"
+    <section id="work-experience" class="work-experience" data-aos="fade-up" data-aos-duration="1500"
       data-aos-delay="200">
       <div class="container row">
 
-        <h2>Work Experience</h2>
         <div class="col-lg-6">
-          <div class="work_item">
-            <h4>Job Title 1</h4>
-            <h5>date</h5>
-            <p><em>Location</em></p>
+          <h1>Work Experience</h1>
+          <div class="work-item">
+            <h2>Applications Specialist</h2>
+            <h3>Avidbots Corp.</h3>
+            <p><em>Waterloo, ON, Canada | Aug 2021 - Oct 2022</em></p>
             <ul>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusamus dicta porro! Ut in dicta...
+              <li>Provided troubleshooting assistance to the tech support team on live robots at different customer
+                facilities including diagnosing hardware malfunctions and software errors
               </li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusamus dicta porro! Ut in dicta...
+              <li>Improved tech support diagnosing processes by updating python scripts used to read robot bag files
               </li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusamus dicta porro! Ut in dicta...
+              <li>Created web forms in Salesforce for third parties using Apex classes and HTML
               </li>
+              <li>Wrote scripts with Javascript and REST APIs to assist technicians in organizing and automating data
+                entry to Google sheets</li>
+              <li>Created documentation on installation guides with engineering details for the service team</li>
             </ul>
           </div>
 
-          <div class="work_item">
-            <h4>Job Title 2</h4>
-            <h5>date</h5>
-            <p><em>Location</em></p>
-            <ul>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusamus dicta porro! Ut in dicta...
-              </li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusamus dicta porro! Ut in dicta...
-              </li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusamus dicta porro! Ut in dicta...
-              </li>
-            </ul>
-          </div>
         </div>
 
-        <div class="col-lg-6">
-          <div class="work_item">
-            <h4>Job Title 3</h4>
-            <h5>date</h5>
-            <p><em>Location</em></p>
-            <ul>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusamus dicta porro! Ut in dicta...
-              </li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusamus dicta porro! Ut in dicta...
-              </li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusamus dicta porro! Ut in dicta...
-              </li>
-            </ul>
+        <div class="col-lg-6" id="education">
+
+          <h1>Education</h1>
+          <div class="work-item">
+            <h2>Computer Systems Technology</h2>
+            <h3>British Columbia Institute of Technology (BCIT)</h3>
+            <p><em>Burnaby, BC, Canada | 2023 - 2025</em></p>
+
+            <div id="courses">
+              <h4><i>Relevant Courses</i></h4>
+
+              <table style="width: 100%">
+                <tr>
+                  <th>Course Name</th>
+                  <th>Course Number</th>
+                  <th>Course Credit</th>
+                </tr>
+                <tr>
+                  <td>Programming Methods</td>
+                  <td>1510</td>
+                  <td>7.0</td>
+                </tr>
+                <tr>
+                  <td>Web Development 1</td>
+                  <td>1537</td>
+                  <td>4.0</td>
+                </tr>
+                <tr>
+                  <td>Business Communications</td>
+                  <td>1116</td>
+                  <td>4.0</td>
+                </tr>
+              </table>
+            </div>
           </div>
 
-          <div class="work_item">
-            <h4>Job Title 4</h4>
-            <h5>date</h5>
-            <p><em>Location</em></p>
-            <ul>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusamus dicta porro! Ut in dicta...
-              </li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusamus dicta porro! Ut in dicta...
-              </li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusamus dicta porro! Ut in dicta...
-              </li>
-            </ul>
+          <div class="work-item">
+            <h2>Bachelors of Applied Sciences in Mechanical Engineering, Co-operative Program</h2>
+            <h3>University of Waterloo</h3>
+            <p><em>Waterloo, ON, Canada | 2019</em></p>
           </div>
+
         </div>
 
       </div>
     </section>
 
-    <section id="credentials" class="credentials">
-      <div class="container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-
-        <h2>Credentials</h2>
-        <div class="container">
-          <ol>
-            <li>Computer Systems Technology | British Columbia Institute of Technology</li>
-            <li>education 2</li>
-            <li>certification</li>
-          </ol>
-        </div>
-
-      </div>
-    </section>
-
-    <article id="hobbies" class="hobbies">
+    <section id="hobbies" class="hobbies">
       <div class="container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
 
         <h2>Hobbies</h2>
-        <article class="hobby">
-          <h3>Hobby 1</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </article>
-
-        <article class="hobby">
-          <h3>Hobby 2</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </article>
+        <div class="card">
+          <img class="card-img-top"
+            src="https://images.unsplash.com/photo-1497218770144-3fea6dbc33fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2916&q=80"
+            alt="Woodworking">
+          <div class="card-body">
+            <p class="card-text">I enjoy creating things by hand and I love the look of wood. I like to visit the local
+              woodshop to make small items.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top"
+            src="https://images.unsplash.com/photo-1533240332313-0db49b459ad6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80"
+            alt="Hiking">
+          <div class="card-body">
+            <p class="card-text">A great way for me to destress is to hike in nature and enjoy the weather</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top"
+            src="https://images.unsplash.com/photo-1536867520774-5b4f2628a69b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2740&q=80"
+            alt="Bouldering">
+          <div class="card-body">
+            <p class="card-text">When clothes don't fit me I like to pretend I am a tailor and fix them to size.
+              Sometimes making things from scratch is also fun!</p>
+          </div>
+        </div>
 
       </div>
-    </article>
+    </section>
 
-    <section id="contactme" class="contactme">
+    <!-- <section id="contactme" class="contactme">
       <div class="container" data-aos="fade-up" data-aos-duration="1500">
 
         <h2>Contact Me</h2>
@@ -425,7 +428,7 @@
         </form>
 
       </div>
-    </section>
+    </section> -->
   </main>
 
   <footer>Copyright (C) 2023. All rights reserved.</footer>
@@ -438,7 +441,7 @@
   <script>
     AOS.init();
   </script>
-  <script>
+  <script> // creates typing animation for intro statement
     var i = 0;
     var text = "I am a first year student currently studying Computer Systems Technology at British Columbia Institute of Technology (BCIT) and you have landed on my resume page! ᕕ( ᐛ )ᕗ";
     var speed = 10;
@@ -448,6 +451,26 @@
         document.getElementById("intro_msg").innerHTML += text.charAt(i);
         i++;
         setTimeout(typeWriter, speed);
+      }
+    }
+  </script>
+  <script> // highlights email if mail icon is clicked
+    const emailIcon = document.getElementById("email-icon");
+    emailSpan = document.getElementById("email");
+
+    emailIcon.addEventListener("click", focusEmail);
+
+    function focusEmail() {
+      for (let i = 0; i < 5; i++) {
+        emailSpan.style.animationName = "focusEmail";
+        emailSpan.style.animationDuration = "0.7s";
+        emailSpan.style.animationIterationCount = "6";
+
+        setTimeout(() => {
+          emailSpan.style.animationName = null;
+          emailSpan.style.animationDuration = null;
+          emailSpan.style.animationIterationCount = null;
+        }, 5000);
       }
     }
   </script>

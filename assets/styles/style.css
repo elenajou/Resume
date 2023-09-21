@@ -41,6 +41,7 @@ h6 {
 h3 {
   font-size: 23px;
 }
+
 /*------------
   Header
 --------------*/
@@ -246,20 +247,14 @@ h3 {
   Introduction
 --------------*/
 #introduction {
-  margin-left: 120px;
+  margin-left: 12%;
   height: 170px;
 }
 
 @media (max-width: 1000px) {
   #introduction {
-    margin-left: 150px;
+    margin-left: 15%;
     height: 100px;
-  }
-}
-
-@media (max-width: 770px) {
-  #introduction {
-    margin-left: 135px;
   }
 }
 
@@ -274,24 +269,13 @@ h3 {
   Main
 -------------*/
 #main {
-  margin-left: 280px;
-}
-
-@media (max-width: 1025px) {
-  /* #main {
-    scale: 0.6;
-    margin-left: -10px;
-  } */
-
-  #main {
-    margin-left: 225px;
-  }
+  margin-left: 22%;
 }
 
 @media (max-width: 770px) {
   #main {
     margin-top: 100px;
-    margin-left: 210px;
+    margin-left: 25%;
   }
 }
 
@@ -301,15 +285,19 @@ h3 {
   }
 }
 /*---- Summary ----*/
+.summary img {
+  border-radius: 2%;
+}
 
-.summary #personal_info dl {
+.summary #personal-info dl {
   width: 100%;
   overflow: hidden;
   background: transparent;
   padding: 0;
   margin: 0
 }
-.summary #personal_info dt {
+
+.summary #personal-info dt {
   float: left;
   width: 25%;
   min-height: 30px;
@@ -317,13 +305,25 @@ h3 {
   padding: 0;
   margin: 0;
 }
-.summary #personal_info dd {
+
+.summary #personal-info dd {
   float: left;
   width: 75%;
   min-height: 30px;
   background: transparent;
   padding: 0;
   margin: 0;
+}
+
+@keyframes focusEmail {
+  from {background-color: transparent;}
+  to {background-color: yellow;}
+}
+
+.skills {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9em;
+  align-items: center;
 }
 
 .skills h2{
@@ -340,17 +340,15 @@ h3 {
 .skills .progress {
   border-radius: 0;
   height: 0.9em;
-  font-size: 0.7em;
   background: #f0fdfb ;
-}
-
-.skills .row {
-  font-family: 'Poppins', sans-serif;
-  font-size: 0.9em;
 }
 
 .skills .progress-bar {
   background: #2f415a;
+}
+
+.skills .skill {
+  font-size: 1em;
 }
 
 .skills .skill .val{
@@ -362,64 +360,94 @@ h3 {
   padding-bottom: 10px;
 }
 
+@media (max-width: 900px) {
+  .summary .personal-info-item {
+    font-size: 14px;
+  }
+
+  .skills .skill .val {
+    font-size: 0px;
+  }
+}
+
 /*----------------------
   Work Experience
 -----------------------*/
 
-.work_experience {
+.work-experience {
   padding-top: 20px;
 }
 
-.work_experience .work_item {
+.work-experience h1 {
+  padding-bottom: 0.8em;
+}
+
+.work-experience .work-item {
   padding: 0 0 20px 20px;
-  margin-top: -2px;
+  margin-top: -5px;
   border-left: 2px solid #2f415a;;
   position: relative;
 }
 
-.work_experience .work_item h4 {
-  line-height: 18px;
-  font-size: 18px;
+.work-experience .work-item h2 {
+  line-height: 1.15em;
+  font-size: 20px;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: none;
   font-family: "Poppins", sans-serif;
   margin-top: 0;
-  margin-bottom: 2px;
+  margin-bottom: 0;
 }
 
-.work_experience .work_item h5 {
+.work-experience .work-item h3 {
   font-size: 14px;
   background: #f0fdfb;
-  padding: 4px 10px;
+  padding: 2px 5px;
   display: inline-block;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
-.work_experience .work_item p {
-  font-size: 16px;
+.work-experience .work-item p {
+  font-size: 12px;
   padding: 0;
   margin-bottom: 5px;
 }
 
-.work_experience .work_item ul {
+.work-experience .work-item ul {
   padding-left: 20px;
 }
 
-.work_experience .work_item ul li {
+.work-experience .work-item ul li {
   padding-bottom: 2px;
   font-size: 0.9em;
 }
 
-.work_experience .work_item::before {
+.work-experience .work-item::before {
   content: "";
   position: absolute;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   left: -9px;
   top: 0;
   background: #fe8a45;
   border: 2px solid #2f415a;
+}
+
+#education .work-item::before {
+  background: #B2D0D0;
+}
+
+#education #courses h2 {
+  line-height: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+#education #courses h4 {
+  font-size: 18px;
 }
 
 /*------------------
@@ -435,21 +463,42 @@ h3 {
   background-color: transparent;
 }
 
-.hobbies > h2,
-.hobby {
+.hobbies > h2 {
   margin: 0.5rem;
   padding: 0.3rem;
   font-size: 1.2rem;
-}
-
-.hobby {
-  background: transparent;
 }
 
 .hobby > h3,
 .hobbies > p {
   margin: 0.2rem;
   font-size: 1rem;
+}
+
+.hobbies .card {
+  display: inline-block;
+  width: 300px;
+  margin: 5px 5px 5px 15px;
+  background-color: transparent;
+  border: 0px;
+  vertical-align: top;
+}
+
+.hobbies .card .card-body {
+  height: 150px;
+}
+
+.hobbies .card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+@media (max-width: 900px) {
+  .hobbies .card {
+    margin-left: 5%;
+  }
 }
 
 /*------------------
@@ -459,7 +508,7 @@ h3 {
   width: 90%;
   background: #cad2ce;
   padding: 25px;
-  margin: 25px auto;
+  margin: 4% 0 0 4%;
   border-radius: 10px;
   box-shadow: 0 0 25px 0 rgba(74, 72, 72, 0.7)
 }
@@ -477,14 +526,14 @@ padding: 0;
 }
 
 .contactme button {
-  border-radius: 0%;
-  color: 
+  border-radius: 10%;
+  border: 0.1px solid #094f56;
 }
 
 /*------------------
   Footer
 ------------------*/
 footer {
-  padding: 150px;
-  margin: 100px;
+  padding: 20px;
+  margin-left: 20%;
 }
