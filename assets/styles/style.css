@@ -10,7 +10,7 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #0C646E;
   background-image: url('https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2812&q=80');
-  background-size: clamp(1000px, 100%, 1500px) auto;
+  /* background-size: clamp(1000px, 100%, 1500px) auto; */
 }
 
 aside {
@@ -493,6 +493,15 @@ h3 {
   height: 250px;
   object-fit: cover;
   object-position: 50% 50%;
+  border-radius: 5%;
+}
+
+#woodworking {
+  object-position: 50% 20%;
+}
+
+#hiking {
+  object-position: 50% 70%;
 }
 
 @media (max-width: 900px) {
