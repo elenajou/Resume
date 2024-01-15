@@ -438,6 +438,14 @@ h3 {
   background: #B2D0D0;
 }
 
+.work-item a {
+  color: #0C646E;
+}
+
+.work-item img {
+  max-height: 20px;
+}
+
 #education #courses h2 {
   line-height: 20px;
   font-weight: 600;
