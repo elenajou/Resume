@@ -1,5 +1,5 @@
 /**
-* Updated: Sep 16, 2023 with Bootstrap v5.3.1
+* Updated: Aug 27, 2024 with Bootstrap v5.3.1
 * Author: EJL
 */
 
@@ -8,21 +8,11 @@
 --------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #0C646E;
-  background-image: url('https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2812&q=80');
+  /* background-image: url('https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2812&q=80'); */
   /* background-size: clamp(1000px, 100%, 1500px) auto; */
-}
-
-aside {
-  margin-top: 2px;
-  padding-left: 15px;
-  box-shadow: inset 5px 0 5px -5px #29627e;
-  font-size: 0.8em;
-  font-style: italic;
-}
-
-aside > p {
-  margin: 0.5rem;
+  max-width: 1440px;
+  color: #14213D;
+  background-color: #E5E5E5;
 }
 
 h1,
@@ -32,14 +22,49 @@ h4,
 h5,
 h6 {
   font-family: "Open Sans", sans-serif;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 700;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding-top: 0;
 }
 
-h3 {
-  font-size: 23px;
+h3, .work-experience .work-item h2 {
+  font-size: 18px;
+}
+
+dl, ol, ul, p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 426px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  h3, .work-experience .work-item h2 {
+    font-size: 17px;
+  }
+}
+
+aside {
+  margin-top: 2px;
+  padding-left: 15px;
+  box-shadow: inset 5px 0 5px -5px E5E5E5;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+aside > p {
+  margin: 0.2rem;
 }
 
 /*------------
@@ -56,8 +81,9 @@ h3 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #094f56;
+  background: #14213D;
   overflow-y: auto;
+  max-width: 200px;
 }
 
 .header a {
@@ -66,7 +92,7 @@ h3 {
 }
 
 .header a:hover {
-  color: #30d4da;
+  color: #FCA311;
   text-decoration: none;
 }
 
@@ -196,7 +222,7 @@ h3 {
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
   text-decoration: none;
-  color: #fe8a45;
+  color: #FCA311;
 }
 
 .nav-menu a:hover i,
@@ -223,7 +249,7 @@ h3 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #30d4da;
+  background-color: #FCA311;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -247,21 +273,41 @@ h3 {
   Introduction
 --------------*/
 #introduction {
-  margin-left: 12%;
-  height: 170px;
+  margin-left: 22vw;
+  padding-right: 10vw;
+  margin-top: 4vh;
+  width: 78vw;
+  height: max-content;
+  max-width: 1000px;
 }
 
 @media (max-width: 1000px) {
   #introduction {
-    margin-left: 15%;
-    height: 100px;
+    margin-left: 27vw;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    padding-right: 2vw;
+    width:75vw;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 769px) {
+  #introduction {
+    margin-left: 30vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    padding-right: 5vw;
+    width: 70vw;
+    max-width: 500px;
   }
 }
 
 @media (max-width: 426px) {
   #introduction {
-    margin-left: -50px;
-    height: 125px;
+    margin: 5vw;
+    padding-right: unset;
+    width: unset;
   }
 }
 
@@ -269,19 +315,38 @@ h3 {
   Main
 -------------*/
 #main {
-  margin-left: 22%;
+  margin-left: 22vw;
+  padding-right: 50px;
+  width: 78vw;
+  max-width: 1000px;
+}
+
+@media (max-width: 1000px) {
+  #main {
+    margin-left: 27vw;
+    padding-right: 2vw;
+    width:75vw;
+    max-width: 600px;
+  }
 }
 
 @media (max-width: 770px) {
   #main {
-    margin-top: 100px;
-    margin-left: 25%;
+    margin-left: 27vw;
+    padding-right: 2vw;
+    width:75vw;
+    max-width: 600px;
   }
 }
 
 @media (max-width: 426px) {
-  #main {
-    margin-left: 0;
+  @media (max-width: 426px) {
+    #main {
+      margin: 5vw;
+      padding-right: unset;
+      height: unset;
+      width: unset;
+    }
   }
 }
 /*---- Summary ----*/
@@ -294,7 +359,7 @@ h3 {
   overflow: hidden;
   background: transparent;
   padding: 0;
-  margin: 0
+  margin-top: 5px;
 }
 
 .summary #personal-info dt {
@@ -314,7 +379,10 @@ h3 {
   padding: 0;
   margin: 0;
 }
-
+.personal-info-item {
+  font-size: 0.9em;
+  margin-bottom: 0;
+}
 @keyframes focusEmail {
   from {background-color: transparent;}
   to {background-color: yellow;}
@@ -326,29 +394,18 @@ h3 {
   align-items: center;
 }
 
-.skills h2{
-  padding-top: 20px;
-}
 .skills p{
   margin-bottom: 0px;
-}
-
-.skills h3 {
-  padding-top: 15px;
 }
 
 .skills .progress {
   border-radius: 0;
   height: 0.9em;
-  background: #f0fdfb ;
+  background: white ;
 }
 
 .skills .progress-bar {
   background: #2f415a;
-}
-
-.skills .skill {
-  font-size: 1em;
 }
 
 .skills .skill .val{
@@ -356,20 +413,19 @@ h3 {
   font-style: normal;
 }
 
-.skills .container {
-  padding-bottom: 10px;
+.skills ul{
+  margin: 0;
 }
 
 @media (max-width: 900px) {
   .summary .personal-info-item {
-    font-size: 14px;
+    padding: unset;
   }
 
   .skills .skill .val {
     font-size: 0px;
   }
 }
-
 /*----------------------
   Work Experience
 -----------------------*/
@@ -391,7 +447,6 @@ h3 {
 
 .work-experience .work-item h2 {
   line-height: 1.15em;
-  font-size: 20px;
   font-weight: 600;
   text-transform: none;
   font-family: "Poppins", sans-serif;
@@ -401,7 +456,7 @@ h3 {
 
 .work-experience .work-item h3 {
   font-size: 14px;
-  background: #f0fdfb;
+  background: white;
   padding: 2px 5px;
   display: inline-block;
   font-weight: 600;
@@ -435,7 +490,7 @@ h3 {
 }
 
 #education .work-item::before {
-  background: #B2D0D0;
+  background: FCA311;
 }
 
 .work-item a {
@@ -473,19 +528,18 @@ h3 {
 
 .hobbies > h2 {
   margin: 0.5rem;
-  padding: 0.3rem;
-  font-size: 1.2rem;
+  padding: 0rem;
 }
 
 .hobby > h3,
-.hobbies > p {
+.hobbies p {
   margin: 0.2rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .hobbies .card {
   display: inline-block;
-  width: 300px;
+  width: 200px;
   margin: 5px 5px 5px 15px;
   background-color: transparent;
   border: 0px;
@@ -494,11 +548,12 @@ h3 {
 
 .hobbies .card .card-body {
   height: 150px;
+  padding: 0;
 }
 
 .hobbies .card img {
   width: 100%;
-  height: 250px;
+  height: 180px;
   object-fit: cover;
   object-position: 50% 50%;
   border-radius: 5%;
@@ -554,3 +609,4 @@ footer {
   padding: 20px;
   margin-left: 20%;
 }
+
