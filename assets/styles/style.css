@@ -83,7 +83,7 @@ aside > p {
   padding: 0 15px;
   background: #14213D;
   overflow-y: auto;
-  max-width: 200px;
+  max-width: 400px;
 }
 
 .header a {
@@ -273,7 +273,7 @@ aside > p {
   Introduction
 --------------*/
 #introduction {
-  margin-left: 22vw;
+  margin-left: 24vw;
   padding-right: 10vw;
   margin-top: 4vh;
   width: 78vw;
@@ -283,7 +283,7 @@ aside > p {
 
 @media (max-width: 1000px) {
   #introduction {
-    margin-left: 27vw;
+    margin-left: 30vw;
     margin-top: 3vh;
     margin-bottom: 2vh;
     padding-right: 2vw;
@@ -294,7 +294,7 @@ aside > p {
 
 @media (max-width: 769px) {
   #introduction {
-    margin-left: 30vw;
+    margin-left: 32vw;
     margin-top: 1vh;
     margin-bottom: 1vh;
     padding-right: 5vw;
@@ -305,7 +305,7 @@ aside > p {
 
 @media (max-width: 426px) {
   #introduction {
-    margin: 5vw;
+    margin: 0 5vw 0 8vw;
     padding-right: unset;
     width: unset;
   }
