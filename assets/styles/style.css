@@ -18,19 +18,32 @@ body {
 h1,
 h2,
 h3,
-h4,
 h5,
 h6 {
   font-family: "Open Sans", sans-serif;
-  font-size: 20px;
   font-weight: 700;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-top: 0;
 }
 
+h1 {
+  font-size: 26px;
+}
+
 h3, .work-experience .work-item h2 {
   font-size: 18px;
+}
+
+h4 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+section {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 dl, ol, ul, p {
@@ -47,8 +60,8 @@ dl, ol, ul, p {
   h6 {
     font-size: 20px;
     font-weight: 700;
-    margin-top: 15px;
-    margin-bottom: 5px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
   }
   h3, .work-experience .work-item h2 {
     font-size: 17px;
@@ -281,6 +294,10 @@ aside > p {
   max-width: 1000px;
 }
 
+#phone-profile {
+  display: none;
+}
+
 @media (max-width: 1000px) {
   #introduction {
     margin-left: 30vw;
@@ -308,6 +325,18 @@ aside > p {
     margin: 0 5vw 0 8vw;
     padding-right: unset;
     width: unset;
+  }
+  .intro-container {
+    display: grid;
+  }
+  #phone-profile {
+    display: unset;
+    margin-top: 1em;
+    justify-self: center;
+    height: 80vw;
+    width: auto;
+    max-height: 50vh;
+    border-radius: 10%;
   }
 }
 
@@ -353,7 +382,6 @@ aside > p {
 .summary img {
   border-radius: 2%;
 }
-
 .summary #personal-info dl {
   width: 100%;
   overflow: hidden;
@@ -394,6 +422,11 @@ aside > p {
   align-items: center;
 }
 
+.skills > div > div {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .skills p{
   margin-bottom: 0px;
 }
@@ -415,15 +448,34 @@ aside > p {
 
 .skills ul{
   margin: 0;
+  padding: 0;
+}
+
+.skills li {
+  padding-left: 2px;
 }
 
 @media (max-width: 900px) {
+  .personal-info-item p{
+    margin-top: 1em;
+    
+  }
   .summary .personal-info-item {
     padding: unset;
   }
 
   .skills .skill .val {
     font-size: 0px;
+  }
+
+  .skills > div > div {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #skills li {
+    padding-left: 2px;
+    list-style-type: none;
   }
 }
 /*----------------------
@@ -547,7 +599,9 @@ aside > p {
 }
 
 .hobbies .card .card-body {
-  height: 150px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  height: max-content;
   padding: 0;
 }
 
@@ -568,8 +622,12 @@ aside > p {
 }
 
 @media (max-width: 900px) {
+  .hobbies .container{
+    display: grid;
+  }
   .hobbies .card {
-    margin-left: 5%;
+    justify-self: center;
+    height: max-content
   }
 }
 
